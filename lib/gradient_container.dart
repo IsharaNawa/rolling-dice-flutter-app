@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rolling_dice/styled_text.dart';
 
 // created a new custom widget
 
@@ -28,13 +29,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: Text(
-          "Hello World!",
-          style: TextStyle(
-            fontSize: 20,
-            color: Colors.white,
-          ),
-        ),
+        child: StyledText(),
       ),
     );
   }
