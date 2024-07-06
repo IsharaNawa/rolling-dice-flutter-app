@@ -13,17 +13,16 @@ import 'package:rolling_dice/styled_text.dart';
 // background gradient can be added using decoration parameter in container
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+  const GradientContainer(this.colors, {super.key});
+
+  final List<Color> colors;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            Color.fromARGB(255, 49, 11, 125),
-            Color.fromARGB(255, 54, 19, 152)
-          ],
+          colors: colors,
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),

@@ -16,6 +16,10 @@ void main() {
   // This class provides APIs for showing drawers and bottom sheets.
 
   runApp(const MaterialApp(
-    home: Scaffold(body: GradientContainer()),
+    home: Scaffold(
+        body: GradientContainer([
+      Color.fromARGB(255, 49, 11, 125),
+      Color.fromARGB(255, 54, 19, 152)
+    ])),
   ));
 }
