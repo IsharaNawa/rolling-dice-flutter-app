@@ -12,9 +12,16 @@ void main() {
   // Implements the basic Material Design visual layout structure.
   // This class provides APIs for showing drawers and bottom sheets.
 
+  // center widget : centering the widget
+
+  // adding the background color to scaffold
+
   runApp(const MaterialApp(
     home: Scaffold(
-      body: Text("Hello World!"),
+      backgroundColor: Colors.cyan,
+      body: Center(
+        child: Text("Hello World!"),
+      ),
     ),
   ));
 }
