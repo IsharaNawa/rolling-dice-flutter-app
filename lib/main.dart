@@ -14,13 +14,25 @@ void main() {
 
   // center widget : centering the widget
 
-  // adding the background color to scaffold
+  // since we cant add a gradient color, we want to wrap the body with a container
 
-  runApp(const MaterialApp(
+  // container : adding layout and styling
+  // container is not supported for const
+
+  // background gradient can be added using decoration parameter in container
+
+  runApp(MaterialApp(
     home: Scaffold(
-      backgroundColor: Colors.cyan,
-      body: Center(
-        child: Text("Hello World!"),
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(colors: [
+            Color.fromARGB(255, 49, 11, 125),
+            Color.fromARGB(255, 54, 19, 152)
+          ]),
+        ),
+        child: const Center(
+          child: Text("Hello World!"),
+        ),
       ),
     ),
   ));
