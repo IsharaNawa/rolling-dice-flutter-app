@@ -7,7 +7,14 @@ void main() {
 
   // since all the things in the MaterialApp, we can add const keyword
   // to improve runtime performance
+
+  // scaffold widget : wrapper widget
+  // Implements the basic Material Design visual layout structure.
+  // This class provides APIs for showing drawers and bottom sheets.
+
   runApp(const MaterialApp(
-    home: Text("Hello World!"),
+    home: Scaffold(
+      body: Text("Hello World!"),
+    ),
   ));
 }
