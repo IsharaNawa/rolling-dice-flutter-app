@@ -25,10 +25,14 @@ void main() {
     home: Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          gradient: LinearGradient(colors: [
-            Color.fromARGB(255, 49, 11, 125),
-            Color.fromARGB(255, 54, 19, 152)
-          ]),
+          gradient: LinearGradient(
+            colors: [
+              Color.fromARGB(255, 49, 11, 125),
+              Color.fromARGB(255, 54, 19, 152)
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
         ),
         child: const Center(
           child: Text("Hello World!"),
