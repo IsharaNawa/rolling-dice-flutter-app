@@ -6,7 +6,7 @@ Random randomGenerator = Random();
 
 // add the statfulwidget here
 class DiceRoller extends StatefulWidget {
-  DiceRoller({super.key});
+  const DiceRoller({super.key});
 
   @override
 

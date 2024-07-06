@@ -13,7 +13,7 @@ import 'package:rolling_dice/dice_roller.dart';
 // background gradient can be added using decoration parameter in container
 
 class GradientContainer extends StatelessWidget {
-  GradientContainer(this.colors, {super.key});
+  const GradientContainer(this.colors, {super.key});
 
   final List<Color> colors;
 
@@ -27,7 +27,7 @@ class GradientContainer extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: Center(
+      child: const Center(
         child: DiceRoller(),
       ),
     );
