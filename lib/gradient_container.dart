@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:rolling_dice/styled_text.dart';
 
 // created a new custom widget
 
@@ -27,8 +26,11 @@ class GradientContainer extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: const Center(
-        child: StyledText("Hello World"),
+      child: Center(
+        child: Image.asset(
+          'assets/images/dice-2.png',
+          width: 200,
+        ),
       ),
     );
   }
