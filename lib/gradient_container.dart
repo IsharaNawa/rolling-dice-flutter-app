@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rolling_dice/styled_text.dart';
+import 'package:rolling_dice/dice_roller.dart';
 
 // created a new custom widget
 
@@ -13,13 +13,9 @@ import 'package:rolling_dice/styled_text.dart';
 // background gradient can be added using decoration parameter in container
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer(this.colors, {super.key});
+  GradientContainer(this.colors, {super.key});
 
   final List<Color> colors;
-
-  void rollDice() {
-    print("Method called");
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,27 +28,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Image.asset(
-              'assets/images/dice-2.png',
-              width: 200,
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            TextButton(
-              onPressed: rollDice,
-              style: TextButton.styleFrom(
-                  foregroundColor: Colors.white,
-                  textStyle: const TextStyle(
-                    fontSize: 28,
-                  )),
-              child: const Text("Roll Dice"),
-            ),
-          ],
-        ),
+        child: DiceRoller(),
       ),
     );
   }
